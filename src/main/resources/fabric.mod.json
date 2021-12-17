@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "igtp",
+  "version": "${version}",
+  "name": "igtp",
+  "description": "I Got The Powder",
+  "authors": [
+    "Pardys"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/igtp/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.charlyb01.igtp.client.IgtpClient"
+    ],
+    "main": [
+      "com.github.charlyb01.igtp.Igtp"
+    ]
+  },
+  "mixins": [
+    "igtp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*"
+  }
+}
