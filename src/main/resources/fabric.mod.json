@@ -7,7 +7,11 @@
   "authors": [
     "Pardys"
   ],
-  "contact": {},
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/i-got-the-powder",
+    "issues": "https://github.com/sf-inc/igtp/issues",
+    "sources": "https://github.com/sf-inc/igtp"
+  },
   "license": "MIT",
   "icon": "assets/igtp/icon.png",
   "environment": "*",
@@ -17,6 +21,9 @@
     ],
     "main": [
       "com.github.charlyb01.igtp.Igtp"
+    ],
+    "modmenu": [
+      "com.github.charlyb01.igtp.config.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -25,5 +32,11 @@
   "depends": {
     "fabricloader": ">=0.12.12",
     "fabric": "*"
+  },
+  "custom": {
+    "modupdater": {
+      "strategy": "curseforge",
+      "projectID": 557873
+    }
   }
 }
